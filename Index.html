@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DS14 Back to School</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+    />
+
+    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+
+    <script
+      type="text/javascript"
+      src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <h1>Embedded Analytics with DS14</h1>
+
+    <!-- Create a button to hide the viz -->
+    <button id="hideButton">Click here to hide!</button>
+    <!-- Create a button to show the viz -->
+    <button id="showButton">Click here to show!</button>
+    <!-- Create a container for the export options -->
+    <hr />
+    <div>
+      <button id="pdfButton">Export to PDF</button>
+      <button id="pptButton">Export to PowerPoint</button>
+      <button id="crosstabButton">Export CrossTab</button>
+    <!-- Filters -->
+      <input id = 'minValue' type= 'number' placeholder = 'Min value:'></input>
+      <input id = 'maxValue' type= 'number' placeholder = 'Max value:'></input>
+      <button id = 'filterButton'>Filter Sales</button>
+    </div>
+    <!-- Create a container for the Tableau dashboard -->
+    <div id="vizContainer"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
